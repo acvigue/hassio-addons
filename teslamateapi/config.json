@@ -27,7 +27,7 @@
     "mqtt_user": "user",
     "mqtt_pass": "pass",
     "mqtt_tls": false,
-    "mqtt_namespace": "",
+    "mqtt_namespace": "teslamate",
     "tz": "Europe/London"
   },
   "schema": {
@@ -47,9 +47,6 @@
     "mqtt_namespace": "str",
     "tz": "str"
   },
-  "map": [
-    "share:rw"
-  ],
   "url": "https://github.com/acvigue/hassio-addons/blob/master/teslamateapi/README.md",
   "image": "tobiasehlert/teslamateapi:latest"
 }
