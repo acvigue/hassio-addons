@@ -1,6 +1,6 @@
 {
   "name": "TeslaMateAPI",
-  "version": "0.19.0",
+  "version": "latest",
   "slug": "teslamateapi",
   "description": "A self-hosted data logger for your Tesla.",
   "arch": [
@@ -48,5 +48,5 @@
     "tz": "str"
   },
   "url": "https://github.com/acvigue/hassio-addons/blob/master/teslamateapi/README.md",
-  "image": "tobiasehlert/teslamateapi:latest"
+  "image": "tobiasehlert/teslamateapi"
 }
