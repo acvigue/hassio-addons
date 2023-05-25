@@ -1,0 +1,55 @@
+{
+  "name": "TeslaMateAPI",
+  "version": "0.19.0",
+  "slug": "teslamateapi",
+  "description": "A self-hosted data logger for your Tesla.",
+  "arch": [
+    "armv7",
+    "aarch64",
+    "amd64"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "ingress": false,
+  "panel_icon": "mdi:car-connected",
+  "panel_title": "TeslaMateAPI",
+  "options": {
+    "database_user": "username",
+    "database_pass": "password",
+    "database_name": "databasename",
+    "database_host": "29b65938-postgres",
+    "database_ssl": false,
+    "database_port": 5432,
+    "encryption_key": "supersecret",
+    "api_token": "supersecret",
+    "api_token_disable": false,
+    "mqtt_host": "core-mosquitto",
+    "mqtt_user": "user",
+    "mqtt_pass": "pass",
+    "mqtt_tls": false,
+    "mqtt_namespace": "",
+    "tz": "Europe/London"
+  },
+  "schema": {
+    "database_user": "str",
+    "database_pass": "password",
+    "database_name": "str",
+    "database_host": "str",
+    "database_ssl": "bool",
+    "database_port": "int",
+    "encryption_key": "password",
+    "api_token": "password",
+    "api_token_disable": "bool",
+    "mqtt_host": "str",
+    "mqtt_user": "str",
+    "mqtt_pass": "password",
+    "mqtt_tls": "bool",
+    "mqtt_namespace": "str",
+    "tz": "str"
+  },
+  "map": [
+    "share:rw"
+  ],
+  "url": "https://github.com/acvigue/hassio-addons/blob/master/teslamateapi/README.md",
+  "image": "tobiasehlert/teslamateapi:latest"
+}
